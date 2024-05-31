@@ -12,6 +12,10 @@ header {
     text-align: center;
 }
 
+main {
+    padding: 2em;
+}
+
 h1 {
     color: #f4f4f4;
 }
