@@ -5,11 +5,15 @@ body {
     background-color: #f4f4f4;
 }
 
-h1 {
+header {
     background-color: #00008B;
     color: #f4f4f4;
     padding: 1em 0;
     text-align: center;
+}
+
+h1 {
+    color: #f4f4f4;
 }
 
 nav a {
