@@ -12,3 +12,8 @@ h1 {
     text-align: center;
 }
 
+nav a {
+    color: #f4f4f4;
+    margin: 15px;
+}
+
