@@ -26,3 +26,10 @@ nav a:hover {
 text-decoration: underline;
 }
 
+footer {
+    background-color: #483D8B;
+    color: #f4f4f4;
+    padding: 1em 0;
+    text-align: center;
+}
+
