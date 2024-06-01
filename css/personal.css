@@ -41,7 +41,7 @@ footer {
 }
 
 .link {
-    display: block;
+    display: inline-block;
     text-decoration: none;
     padding: 32px;
     text-align: center;
