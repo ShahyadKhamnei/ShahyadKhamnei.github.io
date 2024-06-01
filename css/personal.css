@@ -42,5 +42,15 @@ footer {
 
 #lIn {
     text-decoration: none;
-    padding: 1em;
+    padding: 32px;
+    text-align: center;
+    color: #000000
 }
+
+#gmail {
+    text-decoration: none;
+    padding: 32px;
+    text-align: center;
+    color: #000000
+}
+
