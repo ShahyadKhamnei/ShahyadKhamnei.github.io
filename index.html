@@ -26,6 +26,22 @@
     <footer>
       <p>&copy; 2024 Shahyad Khamnei. All rights reserved.</p>
     </footer>
+
+      <script>
+      // The Base64 encoded version of your new password "Planner"
+      const encodedPassword = 'UGxhbm5lcgo=';
+
+      function showTaskPage() {
+          const userInput = prompt("Enter password to access tasks:");
+          const decodedPassword = atob(encodedPassword);
+
+          if (userInput === decodedPassword) {
+              window.location.href = 'task.html';
+          } else {
+              alert("Incorrect password!");
+          }
+      }
+    </script>
   </body>
   
 </html>
