@@ -354,3 +354,26 @@ h3 {
     max-width: 420px;
   }
 }
+
+.home-title {
+  font-size: clamp(2.3rem, 6vw, 4.2rem);
+  letter-spacing: -0.055em;
+  margin-bottom: 12px;
+}
+
+.home-subtitle {
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  font-weight: 500;
+}
+
+.hero-copy .lede {
+  margin-top: 18px;
+  font-size: 1.05rem;
+  max-width: 680px;
+}
+
+.hero-actions {
+  margin-top: 26px;
+}
