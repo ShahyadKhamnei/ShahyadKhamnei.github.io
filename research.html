@@ -1,30 +1,93 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-<html>
-  <head> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/research.css">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <title>Shahyad Khamnei - Research</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <title>Research | Shahyad Khamnei</title>
   </head>
-  
+
   <body>
-    <header>
-      <h1>Research</h1>  
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="personal.html">Personal</a>
-        <a href="profexp.html">Professional Experience</a>
-        <a href="research.html">Research</a>
-      </nav> 
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html">Shahyad<span>.</span></a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a class="active" href="research.html">Research</a>
+          <a href="profexp.html">Experience</a>
+          <a href="personal.html">Contact</a>
+        </nav>
+      </div>
     </header>
+
     <main>
-      <p>stuff</p>
+      <section class="hero container">
+        <p class="eyebrow">Research</p>
+        <h1>Research interests and projects.</h1>
+        <p class="lede">
+          My work sits around mathematical physics, random matrix theory, quantum chaos,
+          machine learning, and scientific computation.
+        </p>
+      </section>
+
+      <section class="section container">
+        <div class="grid">
+          <article class="card full">
+            <h3>Quantum Chaos, Random Matrix Theory, and Black Holes</h3>
+            <p class="meta">CERN Theory Department</p>
+            <p>
+              This project investigates how chaotic quantum systems exhibit spectral
+              statistics similar to random matrix ensembles. I am particularly interested
+              in level spacings, spectral form factors, and models such as SYK in the
+              context of holography and black hole physics.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Quantum chaos</span>
+              <span class="tag">Random matrix theory</span>
+              <span class="tag">SYK model</span>
+              <span class="tag">Holography</span>
+            </div>
+          </article>
+
+          <article class="card full">
+            <h3>Reduced Order Modeling and Machine Learning</h3>
+            <p class="meta">University of South Carolina REU / continuing work</p>
+            <p>
+              I have worked on computational approaches to reducing the cost of solving
+              partial differential equations, including techniques based on SVD, POD,
+              Galerkin projection, operator inference, and neural networks.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Reduced order modeling</span>
+              <span class="tag">PDEs</span>
+              <span class="tag">PyTorch</span>
+              <span class="tag">Scientific ML</span>
+            </div>
+          </article>
+
+          <article class="card full">
+            <h3>Chaotic Classical Systems</h3>
+            <p class="meta">Boston University Condensed Matter Theory</p>
+            <p>
+              Studied integrable and non-integrable systems, nonlinear perturbations,
+              reversibility, and adiabatic limits, with applications to suppressing
+              chaotic behavior using approximate adiabatic gauge potentials.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Classical chaos</span>
+              <span class="tag">Adiabatic gauge potentials</span>
+              <span class="tag">Mathematical physics</span>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
-    <footer>
-      <p>&copy; 2024 Shahyad Khamnei. All rights reserved.</p>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 Shahyad Khamnei. All rights reserved.</p>
+      </div>
     </footer>
   </body>
-  
 </html>
-
