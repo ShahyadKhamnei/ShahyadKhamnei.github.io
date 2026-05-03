@@ -1,29 +1,72 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-<html>
-  <head> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/profexp.css">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <title>Shahyad Khamnei - Professional Experience</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <title>Experience | Shahyad Khamnei</title>
   </head>
-  
+
   <body>
-    <header>
-      <h1>Professional Experience</h1>  
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="personal.html">Personal</a>
-        <a href="profexp.html">Professional Experience</a>
-        <a href="research.html">Research</a>
-      </nav> 
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html">Shahyad<span>.</span></a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="research.html">Research</a>
+          <a class="active" href="profexp.html">Experience</a>
+          <a href="personal.html">Contact</a>
+        </nav>
+      </div>
     </header>
+
     <main>
-      <p>stuff</p>
+      <section class="hero container">
+        <p class="eyebrow">Experience</p>
+        <h1>Professional and academic experience.</h1>
+        <p class="lede">
+          A selection of research, technical, and academic work across physics,
+          mathematics, machine learning, and computation.
+        </p>
+      </section>
+
+      <section class="section container">
+        <div class="list">
+          <article class="list-item">
+            <h3>CERN Theory Department — Research Intern</h3>
+            <p class="meta">Quantum chaos, random matrix theory, and black holes</p>
+            <p>
+              Working on computational and theoretical aspects of spectral statistics,
+              SYK simulations, and random matrix behavior in chaotic quantum systems.
+            </p>
+          </article>
+
+          <article class="list-item">
+            <h3>Boston University — Condensed Matter Theory Research</h3>
+            <p class="meta">Chaotic classical systems and adiabatic gauge potentials</p>
+            <p>
+              Studied nonlinear perturbations, integrable versus non-integrable dynamics,
+              and computational tools for understanding and suppressing chaotic behavior.
+            </p>
+          </article>
+
+          <article class="list-item">
+            <h3>University of South Carolina — Research Intern</h3>
+            <p class="meta">Reduced order modeling and scientific machine learning</p>
+            <p>
+              Developed Python simulations and machine learning tools for reduced order
+              modeling of PDE systems including heat, Burgers’, and Navier-Stokes equations.
+            </p>
+          </article>
+        </div>
+      </section>
     </main>
-    <footer>
-      <p>&copy; 2024 Shahyad Khamnei. All rights reserved.</p>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 Shahyad Khamnei. All rights reserved.</p>
+      </div>
     </footer>
   </body>
-  
 </html>
