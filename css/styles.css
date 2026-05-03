@@ -289,3 +289,68 @@ h3 {
     grid-column: 1 / -1;
   }
 }
+
+.hero-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+  align-items: center;
+  gap: 48px;
+}
+
+.profile-card {
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  padding: 18px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.025));
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+}
+
+.profile-image-wrap {
+  aspect-ratio: 1 / 1.12;
+  overflow: hidden;
+  border-radius: 24px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* This hides the broken image icon if you have not added profile.jpg yet */
+.profile-image[src="images/profile.jpg"] {
+  background: linear-gradient(135deg, rgba(138, 180, 255, 0.16), rgba(177, 140, 255, 0.12));
+}
+
+.profile-caption {
+  margin: 14px 4px 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.about-panel {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.about-panel p {
+  margin: 0;
+  color: var(--muted);
+  max-width: 800px;
+}
+
+@media (max-width: 860px) {
+  .hero-split {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-card {
+    max-width: 420px;
+  }
+}
