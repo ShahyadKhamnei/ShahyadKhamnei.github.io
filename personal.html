@@ -1,37 +1,63 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-<html>
-  <head> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/personal.css">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <title>Shahyad Khamnei - Personal</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <title>Contact | Shahyad Khamnei</title>
   </head>
-  
+
   <body>
-    <header>
-      <h1>Personal</h1>  
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="personal.html">Personal</a>
-        <a href="profexp.html">Professional Experience</a>
-        <a href="research.html">Research</a>
-      </nav> 
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html">Shahyad<span>.</span></a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="research.html">Research</a>
+          <a href="profexp.html">Experience</a>
+          <a class="active" href="personal.html">Contact</a>
+        </nav>
+      </div>
     </header>
+
     <main>
-      <a href="mailto:shahyadkhamnei1@gmail.com" target="_blank">
-        <img src="/images/Gmail_Logo.png" alt="Gmail Icon" style="width:32px;height:32px;text-decoration:none;border: 2px solid #000;">
-      </a>
-      <a class="link" href="mailto:shahyadkhamnei1@gmail.com" target="_blank">Shahyadkhamnei1@gmail.com</a>
-      <a href="https://www.linkedin.com/in/shahyad-khamnei-1764a2263" target="_blank">
-      <div> </div>
-        <img src="/images/LinkedIn_Logo.png" alt="LinkedIn Icon" style="width:32px;height:32px;text-decoration:none;border: 2px solid #000;">
-      </a>
-      <a class="link" href="https://www.linkedin.com/in/shahyad-khamnei-1764a2263" target="_blank">LinkedIn</a>
+      <section class="hero container">
+        <p class="eyebrow">Contact</p>
+        <h1>Let’s connect.</h1>
+        <p class="lede">
+          You can reach me by email or through LinkedIn. I am always happy to talk about
+          research, mathematics, physics, machine learning, or collaboration opportunities.
+        </p>
+
+        <div class="contact-list">
+          <a class="contact-link" href="mailto:shahyadkhamnei1@gmail.com">
+            <span>Email</span>
+            <span>shahyadkhamnei1@gmail.com</span>
+          </a>
+
+          <a
+            class="contact-link"
+            href="https://www.linkedin.com/in/shahyad-khamnei-1764a2263"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>LinkedIn</span>
+            <span>Shahyad Khamnei ↗</span>
+          </a>
+
+          <a class="contact-link" href="files/Shahyad_Khamnei_CV.pdf" target="_blank">
+            <span>CV</span>
+            <span>Download PDF ↗</span>
+          </a>
+        </div>
+      </section>
     </main>
-    <footer>
-      <p>&copy; 2024 Shahyad Khamnei. All rights reserved.</p>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 Shahyad Khamnei. All rights reserved.</p>
+      </div>
     </footer>
   </body>
-  
 </html>
