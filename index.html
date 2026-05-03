@@ -21,25 +21,53 @@
           <a href="research.html">Research</a>
           <a href="profexp.html">Experience</a>
           <a href="personal.html">Contact</a>
-          <button type="button" onclick="showTaskPage()">Planner</button>
         </nav>
       </div>
     </header>
 
     <main>
-      <section class="hero container">
-        <p class="eyebrow">Mathematics · Physics · Computer Science</p>
-        <h1>Hi, I’m Shahyad Khamnei.</h1>
-        <p class="lede">
-          I am an undergraduate at Boston University studying mathematics, physics,
-          and computer science, with interests in theoretical physics, random matrix
-          theory, machine learning, and computational methods.
-        </p>
+      <section class="hero container hero-split">
+        <div class="hero-copy">
+          <p class="eyebrow">Mathematics · Physics · Computer Science</p>
+          <h1>Hi, I’m Shahyad Khamnei.</h1>
+          <p class="lede">
+            I am an undergraduate at Boston University studying mathematics,
+            physics, and computer science. My interests lie in theoretical
+            physics, random matrix theory, quantum chaos, machine learning, and
+            scientific computation.
+          </p>
 
-        <div class="hero-actions">
-          <a class="button primary" href="research.html">View research</a>
-          <a class="button" href="profexp.html">View experience</a>
-          <a class="button" href="personal.html">Contact me</a>
+          <div class="hero-actions">
+            <a class="button primary" href="research.html">View research</a>
+            <a class="button" href="profexp.html">View experience</a>
+            <a class="button" href="personal.html">Contact me</a>
+          </div>
+        </div>
+
+        <div class="profile-card">
+          <div class="profile-image-wrap">
+            <img
+              src="images/profile.jpg"
+              alt="Portrait of Shahyad Khamnei"
+              class="profile-image"
+            />
+          </div>
+          <p class="profile-caption">
+            Mathematics, physics, computation, and the structure of chaotic systems.
+          </p>
+        </div>
+      </section>
+
+      <section class="section container">
+        <h2>About</h2>
+        <div class="about-panel">
+          <p>
+            I am interested in the mathematical structures underlying physical
+            systems, especially where analysis, probability, computation, and
+            geometry meet modern theoretical physics. Much of my current work
+            focuses on spectral statistics, random matrix theory, and models of
+            quantum chaos.
+          </p>
         </div>
       </section>
 
@@ -49,8 +77,8 @@
           <article class="card">
             <h3>Quantum chaos and random matrices</h3>
             <p>
-              Studying spectral statistics, level repulsion, and random matrix behavior
-              in chaotic quantum systems and holographic models.
+              Studying spectral statistics, level repulsion, and random matrix
+              behavior in chaotic quantum systems and holographic models.
             </p>
             <div class="tag-row">
               <span class="tag">RMT</span>
@@ -62,8 +90,8 @@
           <article class="card">
             <h3>Machine learning and computation</h3>
             <p>
-              Exploring mathematical and computational approaches to machine learning,
-              reduced order modeling, and high-dimensional systems.
+              Exploring mathematical and computational approaches to machine
+              learning, reduced order modeling, and high-dimensional systems.
             </p>
             <div class="tag-row">
               <span class="tag">ML</span>
@@ -79,11 +107,18 @@
         <div class="list">
           <div class="list-item">
             <strong>CERN Theory Department</strong>
-            <p>Continuing research on quantum chaos, random matrix theory, and black holes.</p>
+            <p>
+              Continuing research on quantum chaos, random matrix theory, and
+              black holes.
+            </p>
           </div>
+
           <div class="list-item">
             <strong>Max Planck Institute for the Physics of Complex Systems</strong>
-            <p>Upcoming research internship focused on many-body quantum systems and simulation.</p>
+            <p>
+              Upcoming research internship focused on many-body quantum systems
+              and simulation.
+            </p>
           </div>
         </div>
       </section>
@@ -94,20 +129,5 @@
         <p>&copy; 2026 Shahyad Khamnei. All rights reserved.</p>
       </div>
     </footer>
-
-    <script>
-      const encodedPassword = "UGxhbm5lcg==";
-
-      function showTaskPage() {
-        const userInput = prompt("Enter password to access planner:");
-        const decodedPassword = atob(encodedPassword);
-
-        if (userInput === decodedPassword) {
-          window.location.href = "planner.html";
-        } else if (userInput !== null) {
-          alert("Incorrect password.");
-        }
-      }
-    </script>
   </body>
 </html>
