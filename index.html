@@ -1,47 +1,113 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-<html>
-  <head> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <title>Shahyad Khamnei - Homepage</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal academic website of Shahyad Khamnei — mathematics, physics, computer science, machine learning, and theoretical physics."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <title>Shahyad Khamnei</title>
   </head>
-  
+
   <body>
-    <header>
-      <h1>Home</h1>  
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="personal.html">Personal</a>
-        <a href="profexp.html">Professional Experience</a>
-        <a href="research.html">Research</a>
-        <a href="#" onclick="showTaskPage()">Planner</a>
-      </nav> 
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html">Shahyad<span>.</span></a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a class="active" href="index.html">Home</a>
+          <a href="research.html">Research</a>
+          <a href="profexp.html">Experience</a>
+          <a href="personal.html">Contact</a>
+          <button type="button" onclick="showTaskPage()">Planner</button>
+        </nav>
+      </div>
     </header>
+
     <main>
-      <h2>Welcome to my Website!</h2>
-      <p>My name is Shahyad Khamnei, and I am a math and electrical engineering undergraduate at Boston University.</p>
+      <section class="hero container">
+        <p class="eyebrow">Mathematics · Physics · Computer Science</p>
+        <h1>Hi, I’m Shahyad Khamnei.</h1>
+        <p class="lede">
+          I am an undergraduate at Boston University studying mathematics, physics,
+          and computer science, with interests in theoretical physics, random matrix
+          theory, machine learning, and computational methods.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button primary" href="research.html">View research</a>
+          <a class="button" href="profexp.html">View experience</a>
+          <a class="button" href="personal.html">Contact me</a>
+        </div>
+      </section>
+
+      <section class="section container">
+        <h2>Current focus</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Quantum chaos and random matrices</h3>
+            <p>
+              Studying spectral statistics, level repulsion, and random matrix behavior
+              in chaotic quantum systems and holographic models.
+            </p>
+            <div class="tag-row">
+              <span class="tag">RMT</span>
+              <span class="tag">SYK</span>
+              <span class="tag">Spectral statistics</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Machine learning and computation</h3>
+            <p>
+              Exploring mathematical and computational approaches to machine learning,
+              reduced order modeling, and high-dimensional systems.
+            </p>
+            <div class="tag-row">
+              <span class="tag">ML</span>
+              <span class="tag">Python/C++</span>
+              <span class="tag">Scientific computing</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container">
+        <h2>Selected updates</h2>
+        <div class="list">
+          <div class="list-item">
+            <strong>CERN Theory Department</strong>
+            <p>Continuing research on quantum chaos, random matrix theory, and black holes.</p>
+          </div>
+          <div class="list-item">
+            <strong>Max Planck Institute for the Physics of Complex Systems</strong>
+            <p>Upcoming research internship focused on many-body quantum systems and simulation.</p>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
-      <p>&copy; 2024 Shahyad Khamnei. All rights reserved.</p>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 Shahyad Khamnei. All rights reserved.</p>
+      </div>
     </footer>
 
-      <script>
-      // The Base64 encoded version of your new password "Planner"
-      const encodedPassword = 'UGxhbm5lcg==';
+    <script>
+      const encodedPassword = "UGxhbm5lcg==";
 
       function showTaskPage() {
-          const userInput = prompt("Enter password to access tasks:");
-          const decodedPassword = atob(encodedPassword);
+        const userInput = prompt("Enter password to access planner:");
+        const decodedPassword = atob(encodedPassword);
 
-          if (userInput === decodedPassword) {
-              window.location.href = 'planner.html';
-          } else {
-              alert("Incorrect password!");
-          }
+        if (userInput === decodedPassword) {
+          window.location.href = "planner.html";
+        } else if (userInput !== null) {
+          alert("Incorrect password.");
+        }
       }
     </script>
   </body>
-  
 </html>
