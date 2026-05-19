@@ -377,3 +377,12 @@ h3 {
 .hero-actions {
   margin-top: 26px;
 }
+
+.page-title {
+  font-size: clamp(2.1rem, 5vw, 3.6rem);
+  max-width: 760px;
+}
+
+.page-hero {
+  padding: 64px 0 40px;
+}
