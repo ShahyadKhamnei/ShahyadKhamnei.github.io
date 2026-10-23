@@ -1,93 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Personal academic website of Shahyad Khamnei — mathematics, physics, computer science, machine learning, and theoretical physics."
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-    <title>Shahyad Khamnei</title>
-  </head>
-
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Shahyad Khamnei — mathematics, physics, and computer science at Boston University. Research interests, publications, CV, and contact.">
+  <meta name="theme-color" content="#f7f3eb">
+  <title>Shahyad Khamnei</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page">
     <header class="site-header">
-      <div class="container nav-wrap">
-        <a class="logo" href="index.html">Shahyad<span>.</span></a>
-       <nav class="nav-links" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="notes.html">Notes</a>
-        <a href="research.html">Research</a>
-        <a href="cv.html">CV &amp; Resume</a>
+      <a class="wordmark" href="index.html" aria-label="Shahyad Khamnei, home">SK<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#interests">Interests</a>
+        <a href="#publications">Publications</a>
+        <a href="files/Shahyad_Khamnei_CV.pdf">CV <span aria-hidden="true">↗</span></a>
       </nav>
-      </div>
     </header>
-
-    <main>
-      <section class="hero container hero-split">
-        <div class="hero-copy">
-          <h1 class="home-title">Shahyad Khamnei</h1>
-          <p class="home-subtitle">
-            Undergraduate at Boston University studying mathematics, physics, and computer science.
-          </p>
-          <p class="lede">
-            I am an undergraduate at Boston University triple majoring in mathematics, physics, and computer science. 
-            My research interests lie in the mathematical foundations of machine learning, quantum many-body systems, 
-            and the connections between these areas through probabilistic modeling and random matrix theory.
-
-            Outside of research, I am an avid tennis player, poker player, and chef.
-          </p>
-
-          <div class="hero-actions">
-            <a class="button primary" href="research.html">Research</a>
-            <a class="button" href="notes.html">Notes</a>
-            <a class="button" href="cv.html">CV &amp; Resume</a>
+    <main id="main" class="layout">
+      <aside class="profile" aria-label="Portrait and contact">
+        <img class="portrait" src="images/profile.jpg" alt="Shahyad Khamnei" width="600" height="750" fetchpriority="high">
+        <div class="profile-details">
+          <p class="small-label">Contact</p>
+          <a class="email" href="mailto:shahyadk@bu.edu">shahyadk@bu.edu <span aria-hidden="true">↗</span></a>
+          <div class="profile-links">
+            <a href="https://github.com/shahyadk-bu">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="files/Shahyad_Khamnei_CV.pdf">Curriculum vitae <span aria-hidden="true">↗</span></a>
           </div>
+          <div class="affiliations"><p>Boston University</p><p>MPIPKS · Dresden</p></div>
         </div>
-
-        <div class="profile-card">
-          <div class="profile-image-wrap">
-            <img
-              src="images/profile.jpg"
-              alt="Portrait of Shahyad Khamnei"
-              class="profile-image"
-            />
-          </div>
-          <p class="profile-caption">
-            Hopeful Undergrad in superposition of cooked and more cooked.
-          </p>
-        </div>
-      </section>
-
-    <footer class="footer">
-      <div class="container footer-content">
-        <div class="footer-identity">
-          <strong>Shahyad Khamnei</strong>
-          <p>Mathematics, physics, and computer science.</p>
-        </div>
-    
-        <div class="footer-links">
-          <a href="mailto:shahyadk@bu.edu">Email</a>
-    
-          <a
-            href="https://github.com/shahyadk-bu"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Academic GitHub
-          </a>
-    
-          <a href="https://shahyadkhamnei.github.io">
-            Website
-          </a>
-        </div>
-    
-        <p class="footer-copyright">
-          &copy; 2026 Shahyad Khamnei.
-        </p>
+      </aside>
+      <div class="content">
+        <section class="intro" aria-labelledby="name">
+          <p class="eyebrow">Mathematics · Physics · Computer Science</p>
+          <h1 id="name">Shahyad<br>Khamnei<span>.</span></h1>
+          <p class="bio">I am an undergraduate at <a href="https://www.bu.edu/">Boston University</a> studying mathematics, physics, and computer science.</p>
+          <p>I am currently a research intern at the <a href="https://www.pks.mpg.de/">Max Planck Institute for the Physics of Complex Systems</a> in Dresden, working on many-body quantum systems.</p>
+          <p class="personal">Outside of research, I enjoy tennis, poker, and cooking.</p>
+        </section>
+        <section id="interests" class="section" aria-labelledby="interests-heading">
+          <div class="section-heading"><span class="section-number" aria-hidden="true">01</span><h2 id="interests-heading">Research interests</h2></div>
+          <p>My interests lie at the intersection of probability, statistical mechanics, and the mathematical foundations of machine learning.</p>
+          <ul class="interests-list">
+            <li>Probability &amp; high-dimensional statistics</li>
+            <li>Random matrix theory</li>
+            <li>Statistical mechanics &amp; quantum many-body systems</li>
+            <li>Mathematical foundations of learning &amp; optimization</li>
+          </ul>
+        </section>
+        <section id="publications" class="section publications" aria-labelledby="publications-heading">
+          <div class="section-heading"><span class="section-number" aria-hidden="true">02</span><h2 id="publications-heading">Publications &amp; preprints</h2></div>
+          <!-- Add verified citations here. See README.md for a copyable entry.
+               No publications were listed on the previous site. -->
+          <p class="empty-state">A publication list will be added here.</p>
+        </section>
       </div>
-  </footer>
-  </body>
+    </main>
+    <footer><span>© 2026 Shahyad Khamnei</span><a href="mailto:shahyadk@bu.edu">Get in touch <span aria-hidden="true">↗</span></a></footer>
+  </div>
+</body>
 </html>
